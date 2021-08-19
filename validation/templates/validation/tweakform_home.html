@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Widget Tweaks Form{% endblock title %}
+
+
+{% block active %} active{% endblock active %}
+
+{% block content %}
+<div class="col-md-8 p-4 text-white">  
+  
+    <h4 class="fst-italic">Django Widget Tweaks Form & Validation</h4>
+   
+    <hr class="bg-light">
+
+   
+ {% include 'validation/includes/tweak_form.html' %} 
+
+   
+ </div>
+{% endblock content %}
+

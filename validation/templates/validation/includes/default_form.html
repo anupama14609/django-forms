@@ -1,0 +1,29 @@
+<h4 class="display-4 fst-italic my-2">Django Default Form</h4> 
+
+<hr class="bg-light">
+<h5>Version1</h5>
+<hr class="bg-light">
+
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="submit" class="mx-2 my-2">
+</form>
+
+<hr class="bg-light">
+<h5 class="my-4">Version2</h5>
+<hr class="bg-light">
+
+{% load crispy_forms_tags %}
+<form id="scrapfriend">
+    <div class="row">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="forg-group col-4">
+            <label for="" class="col-12">{{field.label}}</label>
+            {{field}} 
+        </div>
+        {% endfor %} 
+        <input type="submit" class="btn btn-primary btn-sm  my-4" value="submit"/>
+    </div>
+</form>

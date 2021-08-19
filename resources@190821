@@ -1,0 +1,14 @@
+  def clean_firstname(self):
+        pass 
+
+    def clean_lastname(self):
+        pass
+
+    def clean_phone(self):
+        pass
+
+    def clean_email(self):
+        pass 
+
+    def clean_password(self):
+        pass 
